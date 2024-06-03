@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip-Path|Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 22px;
+        }
+        nav a{
+            text-decoration: none;
+            padding-right: 20px;
+            color: black;
+            font-size: 18px;
+        }
+        .container{
+            width: 100%;
+            background-position: center;
+            background: url(https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90vh;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 50.25% 100%, 0% 88%);
+            position: relative;
+            /* overflow: hidden; */
+        }
+        .container .content{
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 65px;
+            padding: 45px;
+            line-height: 45px;
+        }
+        .content p{
+            color: darkblue;
+        }
+        .content #p1{
+            font-size: 23px;
+            text-align: center;
+        }
+        .content h1{
+            font-size: 50px;
+            text-align: center;
+        }
+        .container #p2{
+            font-size: 20px;
+            text-align: center;
+            width: 50%;
+        }
+        .btn{
+            margin-top: 15px;
+        }
+        .btn #btn1{
+            background-color: darkcyan;
+            padding: 10px;
+            font-size: 15px;
+            font-weight: 500;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .btn #btn2{
+            padding: 11px;
+            font-size: 18px;
+            background: transparent;
+            background: lightcoral;
+        }
+        .left-arrow i{
+            position: absolute;
+            font-size: 35px;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid transparent;
+            background: lightgray;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .right-arrow i{
+            position: absolute;
+            font-size: 35px;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid transparent;
+            background: lightblue;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .anchor i{
+            z-index: 999;
+            position: absolute;
+            top: 96%;
+            left: 48%;
+            border: 1px solid lightseagreen;
+            background: lightblue;
+            border-radius: 50%;
+            font-size: 25px;
+        }
+        /* section{
+            margin: 100px 70px;
+            text-align: center;
+            width: 100%;
+        } */
+        /* .box{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box .a{
+            text-align: center;
+        }
+        .box .a i{
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+        .box .a p{
+            max-width: 200px;
+        } */
+        section{
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .a{
+            margin-left: 100px;
+        }
+        .a i{
+            font-size: 25px;
+        }
+        .a p{
+            font-size: 21px;
+        }
+        nav a:hover{
+            text-decoration: underline;
+            color: lavender;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h2>Logo</h2>
+            </div>
+            <nav>
+                <a href="">Home</a>
+                <a href="">About-us</a>
+                <a href="">portflio</a>
+                <a href="">pricing</a>
+                <a href="">Team</a>
+                <a href="">Blog</a>
+            </nav>
+        </header>
+        <div class="content">
+                <p id="p1">our clients are our first priority</p>
+                <h1>Welcome To The Sky</h1>
+                <p id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum qui autem totam beatae! Corrupti accusantium ratione quasi vel culpa nobis explicabo in, nesciunt labore pariatur! Alias modi beatae nobis maxime.</p>
+                <div class="btn">
+                    <button id="btn1">Get Started now</button>
+                    <button id="btn2">Learn More</button>
+                </div>
+        </div>
+        <div class="left-arrow">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="right-arrow">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="anchor">
+            <i class="fa-solid fa-anchor"></i>
+        </div>
+    </div>
+    <section>
+        <!-- <div class="box">
+            <div class="a">
+                <i class="fa-solid fa-infinity"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum.</p>
+            </div>
+            <div class="a">
+                <i class="fa-regular fa-heart"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum.</p>
+            </div>
+            <div class="a">
+                <i class="fa-solid fa-lightbulb"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum.</p>
+            </div>
+            <div class="a">
+                <i class="fa-solid fa-comments"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum.</p>
+            </div>
+        </div> -->
+        <div class="a">
+            <i class="fa-solid fa-infinity"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum.</p>
+        </div>
+        <div class="a">
+            <i class="fa-regular fa-heart"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum.</p>
+        </div>
+        <div class="a">
+            <i class="fa-solid fa-lightbulb"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum.</p>
+        </div>
+        <div class="a">
+            <i class="fa-solid fa-comments"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum.</p>
+        </div>
+    </section>
+</body>
+
+</html>

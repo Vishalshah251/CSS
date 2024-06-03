@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FAQ</title>
+</head>
+<body>
+
+    <h2>What are the benefits of using CSS?</h2>
+    <p>
+        CSS separates content from presentation, allowing HTML to focus on the structure of the content while CSS handles the design. This separation enhances reusability since the same CSS file can be used across multiple HTML pages, ensuring a consistent look and feel. Additionally, CSS improves page load times as styles are cached by the browser, and it provides greater flexibility and maintainability by enabling easier updates and changes to the design.
+    </p>
+
+    <h2>What are the disadvantages of CSS?</h2>
+    <p>
+        CSS can have inconsistencies across different browsers, which means styles might not render the same way in all browsers. This requires extensive testing and sometimes specific adjustments for certain browsers. The learning curve can be steep for beginners who need to understand various properties and how they interact. Additionally, managing large CSS files can be challenging, especially when styles conflict or override each other, leading to complex debugging and maintenance.
+    </p>
+
+    <h2>What is the difference between CSS2 and CSS3?</h2>
+    <p>
+        CSS3 introduced several new features and capabilities that were not available in CSS2. These include:
+        - Rounded corners (`border-radius`).
+        - Gradient backgrounds (`linear-gradient` and `radial-gradient`).
+        - Shadows for text and elements (`text-shadow` and `box-shadow`).
+        - Transitions and animations for smoother, more dynamic effects.
+        - New layout models like Flexbox and Grid for advanced, responsive design.
+        - Improved selectors, such as attribute selectors and pseudo-classes.
+        - Additional properties and units for better control over design elements.
+    </p>
+
+    <h2>Name a few CSS style components</h2>
+    <p>
+        CSS style components include:
+        - Selectors: Patterns used to select HTML elements to apply styles.
+        - Properties: Specific aspects of the element to be styled, such as color, font-size, or margin.
+        - Values: The settings assigned to properties, like `red`, `16px`, or `10px`.
+        - Declarations: A property-value pair, such as `color: red;`.
+        - Rulesets: A collection of one or more declarations applied to selected elements.
+    </p>
+
+    <h2>What do you understand by CSS opacity?</h2>
+    <p>
+        CSS opacity controls the transparency level of an element. It ranges from 0 to 1, where 0 makes the element completely transparent (invisible) and 1 makes it fully opaque. For example, `opacity: 0.5;` would make the element 50% transparent.
+    </p>
+
+    <h2>How can the background color of an element be changed?</h2>
+    <p>
+        The background color of an element can be changed using the `background-color` property in CSS. For example: 
+        ```css
+        background-color: #ff0000;
+        ```
+        This would change the background color to red.
+    </p>
+
+    <h2>How can image repetition of the background be controlled?</h2>
+    <p>
+        Image repetition of the background can be controlled using the `background-repeat` property. It has several values:
+        - `repeat`: Repeats the background image both horizontally and vertically.
+        - `repeat-x`: Repeats the background image only horizontally.
+        - `repeat-y`: Repeats the background image only vertically.
+        - `no-repeat`: Does not repeat the background image.
+    </p>
+
+    <h2>What is the use of the background-position property?</h2>
+    <p>
+        The `background-position` property is used to specify the initial position of a background image. It can take values such as `top`, `bottom`, `left`, `right`, `center`, or specific coordinates like `50% 50%` to position the background image relative to the element's dimensions.
+    </p>
+
+    <h2>Which property controls the image scroll in the background?</h2>
+    <p>
+        The `background-attachment` property controls whether a background image scrolls with the rest of the page or remains fixed. It can take the following values:
+        - `scroll`: The background image scrolls with the rest of the page.
+        - `fixed`: The background image is fixed in place and does not scroll.
+        - `local`: The background image scrolls with the element's content.
+    </p>
+
+    <h2>Why should background and color be used as separate properties?</h2>
+    <p>
+        Using background and color as separate properties improves readability and maintainability of the CSS code. It allows for more granular control over different aspects of an element's styling and helps avoid conflicts and overrides when managing large stylesheets.
+    </p>
+
+    <h2>How to center block elements using CSS1?</h2>
+    <p>
+        To center block elements using CSS1, you can use the `margin` property with `auto` values. For example:
+        ```css
+        margin: 0 auto;
+        ```
+        This centers the block element horizontally within its container.
+    </p>
+
+    <h2>How to maintain the CSS specifications?</h2>
+    <p>
+        To maintain CSS specifications, follow best practices such as:
+        - Keeping styles organized and modular.
+        - Using a consistent naming convention.
+        - Leveraging CSS preprocessors like Sass or LESS.
+        - Utilizing frameworks like Bootstrap for standardization.
+        - Regularly validating CSS code and testing across different browsers.
+    </p>
+
+    <h2>What are the ways to integrate CSS as a web page?</h2>
+    <p>
+        CSS can be integrated into a web page in three main ways:
+        - Inline styles: Using the `style` attribute directly within HTML elements.
+        - Internal (embedded) style sheets: in this css is written withn style tag
+        /* - External style sheets: in this we have to write external css on different file and attach using link tag.
+    </p>
+
+    <h2>What are embedded style sheets?</h2>
+    <p>
+        Embedded style sheets are CSS rules defined within the <code>&lt;style&gt;</code> tag inside the HTML document's <code> &lt;head&gt;</code> section. They apply styles directly to that specific page, allowing for easy management of styles within a single document.
+    </p>
+
+    <h2>What are the external style sheets?</h2>
+    <p>
+        External style sheets are separate CSS files linked to an HTML document using the <code>&lt;link&gt;</code> tag. They allow the same styles to be applied across multiple web pages, promoting consistency and easier maintenance.
+    </p>
+
+    <h2>What are the advantages and disadvantages of using external style sheets?</h2>
+    <p>
+        Advantages of external style sheets include centralized style management, reusability across multiple pages, and easier maintenance. Disadvantages include an additional HTTP request for the CSS file, which may affect page load times.
+    </p>
+
+    <h2>What is the meaning of the CSS selector?</h2>
+    <p>
+        A CSS selector is a pattern used to select and style specific elements within an HTML document. Selectors can target elements based on their tag name, class, ID, attributes, and more, allowing for precise control over the styling of elements.
+    </p>
+
+    <h2>What are the media types allowed by CSS?</h2>
+    <p>
+        The media types allowed by CSS include:
+        - `all`: Suitable for all devices.
+        - `print`: Intended for printed material and print preview mode.
+        - `screen`: Intended primarily for screens.
+        - `speech`: Intended for speech synthesizers.
+        - Other less commonly used types include `handheld`, `projection`, `tv`, `braille`, `embossed`, and `aural`.
+        These media types enable different styles to be applied based on the device or media rendering the content.
+    </p>
+
+    <h2>What is the rule set?</h2>
+    <p>
+        A rule set in CSS is a collection of one or more CSS rules that define the styling for one or more HTML elements. It consists of a selector and a declaration block, where the selector targets the HTML elements and the declaration block contains property-value pairs that define the styles.
+    </p>
+
+</body>
+</html>

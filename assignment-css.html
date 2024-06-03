@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_ASSIGNMENT BGCOLOR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 95%;
+            height: 100vh;
+            position: relative;
+            margin: 2% auto;
+            display: flex;
+        }
+        .left-panel{
+            width: 50%;
+            height: 90%;
+            background-color: rgb(1, 20, 20);
+            text-align: end;
+            padding: 10% 5% 10% 0%;
+        }
+        .left-panel h2{
+            color: white;
+            letter-spacing: 3px;
+            font-size: 30px;
+        }
+        .left-panel h3{
+            color: orangered;
+            padding: 40px 0px 10px 0px;
+        }
+        .left-panel p{
+            padding-left: 20%;
+            color: bisque;
+            word-spacing: 2px;
+        }
+        .circle-button{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: white;
+            border: 2px solid white;
+            transition: 1s linear;
+        } 
+         
+        .icon1{
+            position: absolute;
+            left: 48%;
+            top: 33%; 
+            padding: 13px;
+            font-size: 20px;
+            color: black;    
+        }
+        .icon2{
+            position: absolute;
+            left: 48%;
+            top: 48%; 
+            padding: 13px;
+            font-size: 20px;
+            color: black;    
+        }
+        .icon3{
+            position: absolute;
+            left: 48%;
+            bottom: 29%; 
+            padding: 13px;
+            font-size: 20px;
+            color: black;    
+        }
+        .right-panel{
+            width: 50%;
+            height: 90%;
+            background-color: red;
+            background: url(https://images.hdqwalls.com/wallpapers/eclipse-abstract-5k-9d.jpg) no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>OUR SERVICES</h2>
+            <h3>WEB DESIGN</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui.</p>
+           
+            <h3>PRINT DESIGN</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui.</p>
+        
+            <h3>PHOTOGRAPHY</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui.</p>
+        </div>
+        <div class="icon1 circle-button">
+            <i class="fa fa-computer"></i>
+        </div>
+        <div class="icon2 circle-button">
+            <i class="fa fa-print"></i>
+        </div>
+        <div class="icon3 circle-button">
+            <i class="fa fa-camera"></i>
+        </div>
+        <div class="right-panel"></div>
+    </div>
+</body>
+</html>
