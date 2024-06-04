@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid | css</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .image-box {
+            height: 250px;
+        }
+
+        .container {
+            width: 95%;
+            margin: 5% auto;
+            background-color: #1f1f1f;
+            display: flex;
+        }
+
+        .left-section {
+            width: 85%;
+            height: 100%;
+            background-color: #1f1f1f;
+            overflow: hidden;
+        }
+
+        .right-section {
+            padding: 10px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            color: white;
+            width: 15%;
+        }
+
+        .right-section a {
+            color: white;
+            line-height: 22px;
+            text-decoration: none;
+        }
+
+        /* row 1 start  */
+        .left-section .row1 {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-template-rows: 250px;
+            gap: 10px;
+
+        }
+
+        .left-section .row1 .image-box1 {
+            background: url(https://images.hdqwalls.com/wallpapers/bthumb/spider-man-protector-gu.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+
+        }
+
+        .left-section .row1 .image-box2 {
+            background: url(https://images.hdqwalls.com/wallpapers/bthumb/akuma-ck.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+
+        }
+
+        .left-section .row2 {
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            grid-template-rows: 250px;
+            gap: 10px;
+            margin-top: 15px;
+
+        }
+
+        .left-section .row2 .image-box3 {
+            background: url(https://images.hdqwalls.com/wallpapers/thumb/showdown-of-deadpool-and-wolverine-vr.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+
+        }
+
+
+        .left-section .row2 .image-box4 {
+            background: url(https://images.hdqwalls.com/wallpapers/thumb/zenitsu-agatsuma-demon-slayer-ks.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+
+        }
+
+
+
+        .left-section .row2 .image-box5 {
+            background: url(https://images.hdqwalls.com/wallpapers/thumb/boy-in-nature-x-sci-fi-realm-ji.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+
+        }
+
+
+        .left-section .row3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 250px;
+            gap: 10px;
+            margin-top: 15px;
+
+        }
+
+        .left-section .row3 .image-box6 {
+            background: url(https://images.hdqwalls.com/wallpapers/thumb/superman-immortal-warrior-53.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+
+        }
+
+
+        .left-section .row3 .image-box7 {
+            background: url(https://images.hdqwalls.com/wallpapers/thumb/lights-path-abstract-1r.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+
+        }
+
+
+        /* row 3 end  */
+
+        /* row 4 start  */
+        .left-section .row4 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 250px;
+            gap: 10px;
+            margin-top: 15px;
+
+        }
+
+        .left-section .row4 .image-box8 {
+            background: url(https://images.hdqwalls.com/wallpapers/thumb/batman-symphony-rc.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+
+        }
+
+        .left-section .row4 .image-box9 {
+            background: url(https://images.hdqwalls.com/wallpapers/thumb/dr-octupus-vs-spider-man-6h.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+
+        }
+
+
+        .left-section .row4 .image-box10 {
+            background: url(https://images.hdqwalls.com/wallpapers/thumb/the-smoke-break-in-apocalypse-0m.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+
+        }
+
+        /* row 4 end  */
+
+        /* right section */
+        .right-section {
+            padding: 10px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            color: white;
+            width: 15%;
+        }
+
+        .right-section a {
+            color: white;
+            line-height: 22px;
+            text-decoration: none;
+        }
+
+        .right-section i {
+            flex-direction: row;
+        }
+
+        .social-icons {
+            padding-top: 20px;
+        }
+
+        .social-icons a {
+            padding-right: 5px;
+        }
+
+        @media screen and (max-width:880px) {
+            .container {
+                flex-direction: column-reverse;
+            }
+
+            .left-section {
+                width: 100%;
+            }
+
+            .right-section {
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .left-section .row1 {
+                grid-template-columns: 1fr;
+            }
+
+            .left-section .row2 {
+                grid-template-columns: 1fr;
+            }
+
+            .left-section .row3 {
+                grid-template-columns: 1fr;
+            }
+
+            .left-section .row4 {
+                grid-template-columns: 1fr;
+            }
+
+            .left-section .row1 .image-box1 {
+                width: 100%;
+            }
+
+            .left-section .row1 .image-box2 {
+                width: 100%;
+            }
+
+            .left-section .row2 .image-box3 {
+                width: 100%;
+            }
+
+            .left-section .row2 .image-box4 {
+                width: 100%;
+            }
+
+            .left-section .row2 .image-box5 {
+                width: 100%;
+            }
+
+            .left-section .row3 .image-box6 {
+                width: 100%;
+            }
+
+            .left-section .row3 .image-box7 {
+                width: 100%;
+            }
+
+            .left-section .row4 .image-box8 {
+                width: 100%;
+            }
+
+            .left-section .row4 .image-box9 {
+                width: 100%;
+            }
+
+            .left-section .row4 .image-box10 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-section">
+            <div class="row1">
+                <div class="image-box image-box1"></div>
+                <div class="image-box image-box2"></div>
+            </div>
+
+            <div class="row2">
+                <div class="image-box image-box3"></div>
+                <div class="image-box image-box4"></div>
+                <div class="image-box image-box5"></div>
+            </div>
+            <div class="row3">
+                <div class="image-box image-box6"></div>
+                <div class="image-box image-box7"></div>
+            </div>
+            <div class="row4">
+                <div class="image-box image-box8"></div>
+                <div class="image-box image-box9"></div>
+                <div class="image-box image-box10"></div>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2>shutter</h2>
+            <a href="">HOME</a>
+            <a href="">PHOTO</a>
+            <a href="">BG</a>
+            <a href="">BLOG</a>
+            <a href="">CONTACT</a>
+            <div class="social-icons">
+                <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                <a href=""> <i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
